@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>바람의 노래를 들어라</title>
+
+    <!-- CSS -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/album/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="dashboard.css" rel="stylesheet">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Murakami Haruki</a>
+      <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+  </header>
+
+  <main>
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">바람의 노래를 들어라</h1>
+            <button name="edit" onclick="return editForm()" class="btn btn-primary my-2" type="submit">Edit</button>
+            <button name="delete" onclick="return deleteForm()" class="btn btn-secondary my-2" type="submit" >Delete</button>
+            
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function deleteForm(){
+      alert("게시물을 삭제할까요?");
+    }
+    function editForm(){
+      location.href="edit.html"
+    }
+  </script>
+  </body>
+</html>
